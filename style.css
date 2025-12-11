@@ -458,19 +458,19 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.our-team {
+#our-team {
     background-color: var(--clr-red);
     padding: 50px 20px;
     text-align: center;
 }
 
-.our-team p {
+#our-team p {
     font-size: 24px;
     margin-bottom: 5px;
     color: white;
 }
 
-.our-team h1 {
+#our-team h1 {
     font-size: 48px;
     color: white;
     margin-bottom: 40px;
@@ -598,7 +598,7 @@ section {
     margin: 0 auto;
 }
 
-.plan-card {
+.plan-card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -616,6 +616,10 @@ section {
     margin-bottom: 10px;
 }
 
+.most-popular{
+    margin-top: -10px;
+}
+
 .plan-card ul {
     font-size: 20px;
     list-style-type: none;
@@ -629,6 +633,7 @@ section {
 
 .plan-card .buy-btn {
     font-size: 24px;
+    margin-top: auto;
     padding: 10px 30px;
     width: 100%;
 }
@@ -773,6 +778,156 @@ footer .logo {
     width: 100%;
     min-width: 180px;
     border: 2px solid grey;
+}
+
+.contact-body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    background-color: #EBE4DA;
+    flex-direction: column;
+}
+
+.contact-heading {
+    font-size: 5rem;
+    font-family: 'comixo',sans-serif;
+    margin-top: 5vh;
+}
+
+.contact-box {
+    height: 57vh;
+    width: 40vw;
+    box-sizing: border-box;
+    border: 8px solid black;
+    border-radius: 3%;
+    background-color: #FEFEFE;
+    box-shadow: -10px 10px #D5342A;
+    margin-top: 2vh;
+}
+
+.contactbox-heading {
+    font-size: 3rem;
+    font-weight: normal;
+    text-decoration: underline;
+    width: fit-content;
+    margin: 1vh auto;
+}
+
+.contact-box label {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.contact-box input{
+    display: block;
+    width: 95%;
+    height: 4vh;
+    border: 4px solid black;
+    margin: 0.5vh auto;
+    background-color: #EBE4DA;
+}
+
+.contact-box input[id="msg"] {
+    display: block;
+    width: 95%;
+    height: 12vh;
+    border: 4px solid black;
+    margin: 0.5vh auto;
+    background-color: #EBE4DA;
+}
+
+.contact-box .contact-btn{
+    display: block;
+    box-sizing: border-box;
+    width: 95%;
+    height: 5vh;
+    border: 4px solid black;
+    margin: 1.5vh auto;
+    background-color: #D42825;
+    color: #FFF8FB;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'comixo',sans-serif;
+
+}
+
+.contact-footer{
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0.5vh auto;
+    text-transform: lowercase;
+    font-family: 'Obviously', sans-serif;
+}
+
+.contact-footer div>pre {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0.5vh auto;
+    text-transform: lowercase;
+    font-family: 'Obviously', sans-serif;
+}
+
+.blog-body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #EBE4DA;
+}
+
+.blog-heading {
+    width: fit-content;
+    margin: 1vh auto;
+    font-size: 4rem;
+    margin-bottom: 1vh;
+
+}
+
+.news-containter {
+    width: 100vw;
+    padding: 0 10vw;
+}
+
+.news-box {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 20px;
+    column-gap: 15vw;
+    margin: 4vh auto;
+}
+
+.news-box img{
+    height: 40vh;
+    width: auto;
+}
+
+.news-box .news-dec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2vw;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'comixo',sans-serif;
+}
+
+.news-box .news-dec button{
+    width: 6vw;
+    height: 4vh;
+    background-color: #E53A36;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    border: 1px solid #E53A36;
+    border-radius: 2.1vh;
+}
+
+.news-box .news-dec button:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -929,4 +1084,16 @@ footer .logo {
         justify-content: space-around;
         gap: 30px;
     }
+}
+
+@media (min-width: 500px) and (max-width: 1200px){
+    .news-box .news-dec button{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 2925px){
+     .news-box .news-dec button{
+        font-size: 1.5rem;
+     }
 }
