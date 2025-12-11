@@ -797,8 +797,8 @@ footer .logo {
 }
 
 .contact-box {
-    height: 57vh;
-    width: 40vw;
+    height: 60vh;
+    width: 50vw;
     box-sizing: border-box;
     border: 8px solid black;
     border-radius: 3%;
@@ -841,30 +841,23 @@ footer .logo {
 }
 
 .contact-box .contact-btn{
-    display: block;
+    display: flex;
     box-sizing: border-box;
     width: 95%;
-    height: 5vh;
+    height: 7.5vh;
     border: 4px solid black;
-    margin: 1.5vh auto;
+    margin: 2.5vh auto;
     background-color: #D42825;
     color: #FFF8FB;
     font-size: 2.5rem;
     font-weight: 600;
     font-family: 'comixo',sans-serif;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-footer{
     width: fit-content;
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin: 0.5vh auto;
-    text-transform: lowercase;
-    font-family: 'Obviously', sans-serif;
-}
-
-.contact-footer div>pre {
     font-size: 1.5rem;
     font-weight: normal;
     margin: 0.5vh auto;
@@ -917,6 +910,7 @@ footer .logo {
 }
 
 .news-box .news-dec button{
+    display: flex;
     width: 6vw;
     height: 4vh;
     background-color: #E53A36;
@@ -924,6 +918,8 @@ footer .logo {
     font-size: 1.5rem;
     border: 1px solid #E53A36;
     border-radius: 2.1vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .news-box .news-dec button:hover{
@@ -1096,4 +1092,16 @@ footer .logo {
      .news-box .news-dec button{
         font-size: 1.5rem;
      }
+}
+
+@media (min-width: 950px) and (max-width: 1580px){
+    .contact-heading{
+        font-size: 2.8rem;
+    }
+    .contactbox-heading{
+        font-size: 2.7rem;
+    }
+    .contact-box .contact-btn{
+        font-size: 2.3rem;
+    }
 }
